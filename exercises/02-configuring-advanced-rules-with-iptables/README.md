@@ -2,7 +2,11 @@
 
 iptables rules can also determine how to handle different types of network traffic based on criteria such as IP address, port, protocol, and connection state, and it is mainly used for network security, controlling the traffic that enters and leaves a system.
 
+
+
 To achieve results similar to those achieved with access control lists (ACLs) on Cisco devices (although the syntax is different), we can define rules on our server with WordPress that allow or block traffic based on IP addresses and network masks using iptables.
+
+
 
 For example, to allow traffic from a specific network 192.168.1.0/24 (equivalent to a mask of 255.255.255.0) and deny the rest, similar to what you would do with a standard Cisco ACL, we could do the following:
 
