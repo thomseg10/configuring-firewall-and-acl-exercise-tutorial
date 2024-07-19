@@ -1,0 +1,12 @@
+{
+  "grading": "isolated",
+  "difficulty": "easy",
+  "duration": 1,
+  "description": {
+    "us": "develop practical skills in securing a wordpress installation through the setup of firewalls and ACLs"
+  },
+  "title": {
+    "us": "configuring firewall and acl exercise tutorial"
+  },
+  "slug": "configuring-firewall-and-acl-exercise-tutorial"
+}

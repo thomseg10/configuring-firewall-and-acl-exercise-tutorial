@@ -1,64 +1,53 @@
-### Configuring Firewall and ACLs for WordPress Security
+<!-- hide -->
+# Configuring Firewall and ACLs for WordPress Security
 
-#### Objective:
-To develop practical skills in securing a WordPress installation through the setup of firewalls and ACLs, enhancing the overall security posture against potential threats.
+> By [@rosinni](https://github.com/rosinni) and [other contributors](https://github.com/breatheco-de/installing-windows-on-virtual-machine/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
 
-#### Tools Needed:
-- **Kali Linux** with VirtualBox: Previously installed.
-- **WordPress Site**: Existing installation from previous projects.
-- **UFW (Uncomplicated Firewall)**: A user-friendly firewall configuration tool.
-- **iptables**: A more advanced tool for setting up ACLs and managing packet filtering.
+![last commit](https://img.shields.io/github/last-commit/4GeeksAcademy/deploying-wordpress-debian)
+[![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
+[![build by developers](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=twitter)](https://twitter.com/4geeksacademy)
 
-#### Instructions:
+*Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/breatheco-de/deploying-wordpress-debian/blob/master/README.es.md) :es:*
+<!-- endhide -->
 
-1. **Introduction to Firewalls and ACLs (15 minutes)**
-   - **Instructor Explanation**:
-     - Provide an overview of what firewalls and ACLs are, including their importance in network security.
-     - Explain the differences between UFW and iptables, and when each tool is appropriate to use.
-   - **Student Preparation**:
-     - Ensure their WordPress and network services are running and accessible.
+## 📝 Instructions
 
-2. **Installing and Configuring UFW (15 minutes)**
-   - **Instructor Demonstration**:
-     - Show how to install UFW on Kali Linux using the terminal:
-       ```bash
-       sudo apt update
-       sudo apt install ufw
-       ```
-     - Demonstrate basic UFW commands to enable the firewall, set default policies, allow SSH connections, and allow web traffic to the WordPress site:
-       ```bash
-       sudo ufw default deny incoming
-       sudo ufw default allow outgoing
-       sudo ufw allow ssh
-       sudo ufw allow http
-       sudo ufw allow https
-       sudo ufw enable
-       ```
-   - **Student Action**:
-     - Students replicate these steps on their systems, configuring UFW to protect their WordPress installation.
+This project aims to develop your practical skills in securing a WordPress installation by setting up firewalls and Access Control Lists (ACLs). You'll learn how to enhance the overall security posture of a WordPress site against potential threats using both user-friendly and advanced tools.
 
-3. **Configuring Advanced Rules with iptables (20 minutes)**
-   - **Setup and Explanation**:
-     - Briefly explain how iptables works, focusing on chain rules (INPUT, FORWARD, OUTPUT) and how packets are processed.
-     - Discuss the significance of setting granular rules for enhanced security.
-   - **Instructor Demonstration and Student Action**:
-     - Guide students to add specific iptables rules to further secure the WordPress server, such as blocking specific IP addresses or dropping packets to unused ports:
-       ```bash
-       sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
-       sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
-       sudo iptables -A INPUT -m state --state NEW -p tcp --dport 22 -j ACCEPT
-       sudo iptables -A INPUT -j DROP
-       ```
-     - Students apply these rules, testing their configuration by attempting to access their WordPress site from different scenarios (e.g., different network configurations).
 
-4. **Testing and Analysis (10 minutes)**
-   - **Simulated Attacks**:
-     - Have students simulate network attacks (like pings or unauthorized access attempts) from their own machines or a designated test machine to see if their firewall rules are effective.
-   - **Review and Feedback**:
-     - Discuss the outcomes with students, reviewing which firewall rules were effective and which were not.
+<!-- hide -->
+### Before you start...
 
-#### Closure and Reflective Discussion (10 minutes)
-- Facilitate a discussion on the importance of firewalls and ACLs in real-world scenarios.
-- Encourage students to reflect on how these security measures can be implemented in different environments and the potential challenges they might face.
+> We need you! These exercises are built and maintained in collaboration with contributors like yourself. If you find any bugs or misspellings, please contribute and/or report them.
+<!-- endhide -->
 
-This project will help students gain a solid understanding of basic and advanced firewall configurations, as well as hands-on experience in securing a web application environment effectively.
+## 🌱 How to start a project?
+
+Clone this repository in your debian virtual machine ([how to clone this repository](https://4geeks.com/how-to/github-clone-repository)) and follow the steps below:
+
+1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 14:
+
+```bash
+$ npm i @learnpack/learnpack -g
+```
+
+2. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
+
+```bash
+$ learnpack start
+```
+
+<!-- hide -->
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+1. [Rosinni Rodriguez (rosinni)](https://github.com/rosinni) contribution: (build-tutorial) ✅, (documentation) 📖
+  
+2. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr),  contribution: (bug reports) 🐛
+
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind are welcome!
+
+This and many other exercises are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sánchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and  [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).You can alse deepdive in the world of cybersecurity with our [Cybersecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity)
+<!-- endhide -->
