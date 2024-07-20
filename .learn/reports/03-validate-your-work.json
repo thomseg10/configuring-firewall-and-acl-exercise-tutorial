@@ -1,0 +1,16 @@
+{
+  "success": false,
+  "numFailedTestSuites": 1,
+  "numFailedTests": 0,
+  "numPassedTests": 0,
+  "testResults": [
+    {
+      "message": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Your test suite must contain at least one test.\n\n      \u001b[2mat onResult (\u001b[22m../../../../node_modules/@jest/core/build/TestScheduler.js\u001b[2m:133:18)\u001b[22m\n      \u001b[2mat \u001b[22m../../../../node_modules/@jest/core/build/TestScheduler.js\u001b[2m:254:19\u001b[22m\n      \u001b[2mat \u001b[22m../../../../node_modules/emittery/index.js\u001b[2m:363:13\u001b[22m\n          at Array.map (<anonymous>)\n      \u001b[2mat Emittery.emit (\u001b[22m../../../../node_modules/emittery/index.js\u001b[2m:361:23)\u001b[22m\n",
+      "errorType": {
+        "message": "Your test suite must contain at least one test.",
+        "stack": "Error: Your test suite must contain at least one test.\n    at onResult (C:\\Users\\Rosinni\\node_modules\\@jest\\core\\build\\TestScheduler.js:133:18)\n    at C:\\Users\\Rosinni\\node_modules\\@jest\\core\\build\\TestScheduler.js:254:19\n    at C:\\Users\\Rosinni\\node_modules\\emittery\\index.js:363:13\n    at Array.map (<anonymous>)\n    at Emittery.emit (C:\\Users\\Rosinni\\node_modules\\emittery\\index.js:361:23)"
+      }
+    }
+  ],
+  "failed": []
+}
