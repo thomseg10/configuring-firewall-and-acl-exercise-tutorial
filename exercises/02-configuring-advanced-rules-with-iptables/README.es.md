@@ -16,7 +16,7 @@ sudo iptables -A INPUT -j DROP # denegar todo el tráfico que no coincida con la
 
 Para ofrecer una mayor seguridad al considerar varios aspectos del tráfico de red y proporcionar reglas más específicas y avanzadas, deberiamos diseñar la configuración de las siguientes reglas:
 
-* Añade regla avanzada para permitir tráfico entrante en el puerto 22 (SSH) solo desde una direccion IP específica.
+* Añade una regla avanzada para permitir tráfico entrante en el puerto 22 (SSH) solo desde una direccion IP específica.
 > Nota: Esta regla puede ayudar a la protección contra Ataques de Fuerza Bruta en SSH.
 
 * Añade una regla para limitar nuevas conexiones al puerto 80 para proteger contra ataques DDoS.

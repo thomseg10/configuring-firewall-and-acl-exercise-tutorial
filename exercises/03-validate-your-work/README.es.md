@@ -1,24 +1,19 @@
 # `03` Valida tu trabajo
 
-Este paso es consiste en ejecutar un script de verificación para validar lo solicitado en ésta práctica, para ello sigue los siguientes pasos:
+Hemos desarrollado un script para ayudarte a medir tu éxito durante este proyecto.
+
+En la carpeta `.learn/assets` encontraras el script [check-rules.sh](https://github.com/breatheco-de/configuring-firewall-and-acl-exercise-tutorial/blob/main/.learn/assets/check-rules.sh) que deberás copiar y pegar en el escritorio de tu máquina virtual de Debian.
+
 
 ## 1. Ejecuta el script
 
-En el escritorio de tu máquina Debian descarga este archivo [check-rules.sh](https://github.com/breatheco-de/configuring-firewall-and-acl-exercise-tutorial/blob/main/.learn/assets/check-rules.sh).
-
-Navegar al directorio donde se encuentra el script check-rules.sh Pueden usar el comando cd para cambiar de directorio. Por ejemplo, si el script está en la carpeta Documentos, deben ejecutar:
-
-```sh
-cd ~/Documentos
-```
-
-Hacer que el script sea ejecutable (si aún no lo es). Esto se puede hacer usando el comando chmod:
+Una vez pegado el script [check-rules.sh](https://github.com/breatheco-de/configuring-firewall-and-acl-exercise-tutorial/blob/main/.learn/assets/check-rules.sh) en tu maquina Debian, abre la terminal y navega al directorio donde se encuentra el script, en nuestro caso `./Escritorio` y haz que el script sea ejecutable (si aún no lo es). Esto se puede hacer usando el comando `chmod`:
 
 ```sh
 chmod +x check-rules.sh
 ```
 
-Ejecutar el script especificando el nombre del script. También pueden proporcionar cualquier argumento necesario. Asumiendo que no se necesitan argumentos adicionales para este ejemplo, deben ejecutar:
+Ejecuta el script especificando su nombre. También pueden proporcionar cualquier argumento necesario. Asumiendo que no se necesitan argumentos adicionales para este ejemplo, deben ejecutar:
 
 ```sh
 ./check-rules.sh
@@ -26,10 +21,19 @@ Ejecutar el script especificando el nombre del script. También pueden proporcio
 
 ## 2. Carga tus resultados
 
-La ejecucion del script te creara un archivo report.json que deberas subir como solución a este projecto.
+La ejecucion del script te creara un archivo `report.json` que deberas copiar y pegarlo en la raíz de estos ejercicios de LearnPack para su validación.
 
-## 3. ¡Listo!
+> 💡 Nota: Pegalo al mismo nivel del archivo `learn.json`
 
-Ya has protegido tu servidor wordpress de forma efectiva a través de la configuración de firewall básicas y avanzadas.
+
+## 3. Ejecutar la prueba
+
+Una vez que hayas pegado el archivo report.json en la raíz de los ejercicios de LearnPack, puedes ejecutar la prueba para validar tu trabajo.
+
+![test image](https://raw.githubusercontent.com/breatheco-de/configuring-firewall-and-acl-exercise-tutorial/main/.learn/assets/script-test.png)
+
+## 4. ¡Listo!
+
+Ya has protegido tu servidor wordpress de forma efectiva a través de la configuraciones básicas y avanzadas con iptables.
 
 Si tienes algún problema no dudes en recurrir a un mentor o a los demás canales de apoyo que te ofrece 4Geeks.
