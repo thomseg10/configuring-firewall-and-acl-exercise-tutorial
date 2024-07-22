@@ -7,8 +7,8 @@
     "es": "Desarrollar habilidades prácticas para proteger una instalación de WordPress mediante la configuración de firewalls y ACL."
   },
   "title": {
-    "us": "configuring firewall and acl exercise tutorial",
-    "es": "tutorial de ejercicio de configuración de firewall y acl"
+    "us": "Configuring Firewall and ACL using iptables to improve WordPress security",
+    "es": "Configurar un firewall y ACL usando iptables para mejorar la seguridad de un WordPress site"
   },
   "slug": "configuring-firewall-and-acl-exercise-tutorial"
 }
