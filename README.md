@@ -1,5 +1,5 @@
 <!-- hide -->
-# Configuring Firewall and ACLs for WordPress Security
+# Configuring Firewall and ACLs with iptables for WordPress Security
 
 > By [@rosinni](https://github.com/rosinni) and [other contributors](https://github.com/breatheco-de/configuring-firewall-and-acl-exercise-tutorial/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
 
