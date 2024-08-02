@@ -1,5 +1,6 @@
 {
   "grading": "isolated",
+  "technologies": ["cybersecurity", "wordpress", "access control list", "ciberseguridad"],
   "difficulty": "easy",
   "duration": 1,
   "description": {
